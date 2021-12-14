@@ -1,0 +1,20 @@
+
+<table class="table table-borderless">
+
+    <thead>
+      <tr>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Job Title</th>
+      </tr>
+    </thead>
+    <tbody>{% for post in posts %}
+        <tr>
+            <th scope="row">1</th>
+            <th scope="row">{{post.name}}</th>
+            <th scope="row">{{post.lastname}}</th>
+            <th scope="row">{{post.job_title}}</th>
+          </tr>
+    </tbody>
+  </table>
+{% endfor posts%}
